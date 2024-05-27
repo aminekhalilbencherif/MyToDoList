@@ -14,6 +14,7 @@ USE todolist;
 CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
     description TEXT NOT NULL,
+    name TEXT NOT NULL,
     status ENUM('à faire', 'terminée') DEFAULT 'à faire',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
